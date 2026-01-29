@@ -14,7 +14,7 @@
             <h3>¿Hablamos?</h3>
             <p>Estoy abierta a nuevas oportunidades y colaboraciones.</p>
 
-            <form class="contact-form" id="contactForm">
+            <form class="contact-form" id="contactForm" (ngSubmit)="onSubmit($event)" novalidate>
                 <div class="form-group">
                     <input type="text" id="name" name="name" placeholder="Nombre" required>
                 </div>
@@ -24,7 +24,10 @@
                 <div class="form-group">
                     <textarea id="message" name="message" placeholder="Indica tu mensaje aquí :o" rows="4" required></textarea>
                 </div>
-                <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                <button type="submit" class="btn-primary" [disabled]="isSubmitting">
+                    {{ isSubmitting ? 'Enviando...' : 'Enviar Mensaje' }}
+                </button>
+                <p *ngIf="submitMessage" class="submit-message">{{ submitMessage }}</p>
             </form>
         </div>
     </div>
