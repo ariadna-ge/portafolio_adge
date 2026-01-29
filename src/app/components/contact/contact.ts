@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RevealDirective } from '../../directives/reveal.directive';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [],
+  imports: [RevealDirective],
   templateUrl: './contact.html',
   styleUrls: ['./contact.css'],
 })

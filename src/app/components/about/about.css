@@ -1,0 +1,140 @@
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 40px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.content-box {
+  background: white;
+  padding: 40px;
+  border-radius: 30px;
+  line-height: 1.8;
+  border: 3px solid var(--negro);
+  text-align: left;
+}
+
+.content-box h3 {
+  font-size: 1.5rem;
+  color: var(--verde-azulado);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.content-box p {
+  color: var(--negro);
+  margin-bottom: 15px;
+}
+
+.personal-info {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+.personal-info p {
+  font-size: 15px;
+  color: var(--blanco);
+  margin-bottom: 20px;
+}
+
+.personal-info .btn-primary {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.connect-info {
+  background: var(--celeste-claro);
+  border: none;
+  box-shadow: none;
+  padding: 40px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.connect-info:hover {
+  background: var(--verde-azulado);
+  box-shadow: 0 10px 30px rgba(109, 152, 149, 0.3);
+  transform: scale(1.02);
+}
+
+.connect-info:active {
+  background: #5a7a76;
+  transform: scale(0.98);
+}
+
+.connect-info h3 {
+  color: var(--blanco);
+  margin-bottom: 25px;
+  font-size: 1.3rem;
+}
+
+.connect-info p {
+  color: var(--blanco);
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  border-left: none;
+}
+
+
+
+.contact-item i {
+  font-size: 1.2rem;
+  color: var(--blanco);
+  margin-top: 0;
+  flex-shrink: 0;
+}
+
+.contact-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.contact-item label {
+  font-size: 0.85rem;
+  color: var(--blanco);
+  font-weight: 600;
+}
+
+.contact-item a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.contact-item a:hover {
+  color: var(--celeste-claro);
+  text-decoration: underline;
+}
