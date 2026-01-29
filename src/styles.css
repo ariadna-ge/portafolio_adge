@@ -120,3 +120,53 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px 5%;
+  }
+
+  .social-links {
+    gap: 10px;
+  }
+
+  .social-links a {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero { flex-direction: column; text-align: center; padding-top: 50px; }
+  .hero h1 { font-size: 2.5rem; }
+  .hero-img img { width: 250px; height: 250px; margin-top: 40px; }
+  .navbar { padding: 1rem 5%; }
+  .nav-links { display: none; }
+}
+
+@media (max-width: 1024px) {
+  .section { padding: 80px 8%; }
+  .periodico { font-size: 2.2rem; margin-bottom: 40px; }
+  .letra { padding: 8px 12px; }
+  .btn-primary, .btn-secondary { padding: 12px 22px; }
+}
+
+@media (max-width: 768px) {
+  .section { padding: 60px 6%; }
+  .periodico { font-size: 1.9rem; margin-bottom: 30px; }
+  .letra { padding: 6px 8px; }
+  .btn-primary, .btn-secondary { padding: 12px 18px; }
+  .btn-primary { width: 100%; }
+  .hero-img img { width: 200px; height: 200px; }
+}
+
+@media (max-width: 480px) {
+  .section { padding: 40px 5%; }
+  .periodico { font-size: 1.4rem; margin-bottom: 20px; }
+  .hero h1 { font-size: 1.8rem; }
+  .navbar { padding: 0.6rem 5%; }
+  .letra { padding: 5px 6px; }
+}

@@ -138,3 +138,22 @@
   color: var(--celeste-claro);
   text-decoration: underline;
 }
+
+@media (max-width: 1024px) {
+  .about-container { gap: 40px; max-width: 900px; padding: 0 4%; }
+  .content-box { padding: 30px; }
+  .connect-info { padding: 30px; }
+}
+
+@media (max-width: 768px) {
+  .about-container { grid-template-columns: 1fr; gap: 30px; padding: 0 5%; }
+  .content-box { padding: 20px; border-radius: 20px; }
+  .connect-info { min-width: auto; padding: 20px; }
+  .content-box h3 { font-size: 1.3rem; }
+}
+
+@media (max-width: 480px) {
+  .content-box { padding: 16px; }
+  .connect-info { padding: 16px; }
+  .contact-item label { font-size: 0.8rem; }
+}

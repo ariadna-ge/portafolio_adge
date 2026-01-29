@@ -98,6 +98,25 @@
   justify-content: center;
 }
 
+@media (max-width: 1024px) {
+  .projects-container { gap: 25px; }
+  .project-card { padding: 28px; }
+  .project-info h3 { font-size: 1.2rem; }
+}
+
+@media (max-width: 768px) {
+  .projects-container { grid-template-columns: 1fr; gap: 20px; padding: 0 5%; }
+  .project-card { padding: 20px; }
+  .tag-tech { width: 40px; height: 40px; font-size: 1.05rem; }
+  .project-info p { font-size: 0.95rem; }
+  .btn-project { padding: 10px 18px; width: 100%; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .project-card { padding: 16px; }
+  .project-info h3 { font-size: 1.05rem; }
+}
+
 .btn-project {
   display: inline-block;
   color: var(--blanco);

@@ -1,10 +1,17 @@
 <nav class="navbar">
     <div class="logo">Ariadna-GE</div>
-    <div class="nav-links">
-        <a href="#inicio">Inicio</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
+
+    <button class="hamburger" (click)="toggleMenu()" aria-label="Abrir menú" [attr.aria-expanded]="isOpen">
+        <span class="bar" [class.open]="isOpen"></span>
+        <span class="bar" [class.open]="isOpen"></span>
+        <span class="bar" [class.open]="isOpen"></span>
+    </button>
+
+    <div class="nav-links" [class.open]="isOpen">
+        <a href="#inicio" (click)="closeMenu()">Inicio</a>
+        <a href="#sobre-mi" (click)="closeMenu()">Sobre mí</a>
+        <a href="#habilidades" (click)="closeMenu()">Habilidades</a>
+        <a href="#proyectos" (click)="closeMenu()">Proyectos</a>
+        <a href="#contacto" (click)="closeMenu()">Contacto</a>
     </div>
 </nav>

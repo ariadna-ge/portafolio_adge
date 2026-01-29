@@ -88,3 +88,21 @@
   font-weight: 500;
   color: var(--blanco);
 }
+
+@media (max-width: 1024px) {
+  .skills-grid { gap: 20px; }
+  .skill-card { padding: 24px; }
+  .skill-icon { font-size: 2.6rem; }
+}
+
+@media (max-width: 768px) {
+  .skills-grid { grid-template-columns: 1fr 1fr; gap: 16px; padding: 0 5%; }
+  .skill-card { padding: 18px; }
+  .skill-icon { font-size: 2.2rem; }
+}
+
+@media (max-width: 480px) {
+  .skills-grid { grid-template-columns: 1fr; }
+  .skill-icon { font-size: 2rem; }
+  .tech-item { padding: 6px 10px; font-size: 0.8rem; }
+}
